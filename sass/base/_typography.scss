@@ -1,0 +1,9 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+// Fonts
+@include font-face($font-primary, 'Montserrat-VariableFont_wght', 400);
+
+:root {
+  font-family: $font-primary;
+}

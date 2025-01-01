@@ -1,0 +1,28 @@
+@use 'functions' as *;
+
+// Colours
+$background-color: hsl(0, 0%, 89%);
+$primary-color: hsl(275, 100%, 25%);
+$text-color: hsl(90, 1%, 31%);
+$accent-color: hsl(39, 91%, 49%);
+// $accent-color: hsl(21, 91%, 28%);
+
+// Fonts
+$font-path: '../../assets/font';
+$font-primary: 'Montserrat';
+
+// breakpoints
+
+// 320px, 768px, 1024px
+$breakpoints-up: (
+  'small': em(320),
+  'medium': em(768),
+  'large': em(1024),
+);
+
+// 319.98, 767.98px, 1023.98px
+$breakpoints-down: (
+  'small': em(319.98),
+  'medium': em(767.98),
+  'large': em(1023.98),
+);
