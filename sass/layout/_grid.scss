@@ -1,0 +1,45 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+.grid {
+  display: grid;
+  gap: $grid-gap;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  padding: $padding-sm;
+
+  &__responsive {
+    @include breakpoint-up(sm) {
+      // Ensuring content fits well for small screens
+      grid-template-columns: minmax(200px, 1fr);
+    }
+
+    @include breakpoint-up(md) {
+      // 2 column layout
+      grid-template-columns: repeat(2, minmax(200px, 1fr));
+    }
+
+    @include breakpoint-up(lg) {
+      // 3 column layout
+      grid-template-columns: repeat(3, minmax(200px, 1fr));
+    }
+  }
+
+  &__heading {
+    justify-self: center;
+    grid-row: 1;
+
+    //Ensures heading stays central
+    @include breakpoint-up(md) {
+      grid-column: 1 / 3;
+    }
+    //Ensures heading stays central
+    @include breakpoint-up(lg) {
+      grid-column: 1 / 4;
+    }
+  }
+
+  &__item {
+    padding: $padding-sm;
+  }
+}

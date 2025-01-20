@@ -5,24 +5,40 @@ $background-color: hsl(0, 0%, 89%);
 $primary-color: hsl(275, 100%, 25%);
 $text-color: hsl(90, 1%, 31%);
 $accent-color: hsl(39, 91%, 49%);
-// $accent-color: hsl(21, 91%, 28%);
+$shadow-colour: hsla(0, 0%, 0%, 0.1);
 
 // Fonts
 $font-path: '../../assets/font';
 $font-primary: 'Montserrat';
 
-// breakpoints
+//Gap defaults
+$grid-gap: rem(16);
+$flex-gap: rem(16);
+
+//Padding defaults
+$padding-sm: rem(16);
+$padding-md: rem(20);
+
+// Breakpoints
 
 // 320px, 768px, 1024px
 $breakpoints-up: (
-  'small': em(320),
-  'medium': em(768),
-  'large': em(1024),
+  'sm': em(576),
+  // Small devices such as phones
+  'md': em(768),
+  // Tablets in portrait mode
+  'lg': em(992),
+  // Small desktops, tablets in landscape mode
+  'xl': em(1200) // Larger desktop monitors,,,,,,
 );
 
 // 319.98, 767.98px, 1023.98px
 $breakpoints-down: (
-  'small': em(319.98),
-  'medium': em(767.98),
-  'large': em(1023.98),
+  'sm': em(575.99),
+  // Small devices such as phones
+  'md': em(767.99),
+  // Tablets in portrait mode
+  'lg': em(991.99),
+  // Small desktops, tablets in landscape mode
+  'xl': em(1199.99) // Larger desktop monitors,,,,,,
 );

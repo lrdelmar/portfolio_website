@@ -1,0 +1,7 @@
+@use '../utilities/functions' as *;
+@use '../utilities/variables' as *;
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 0 rem(10) $shadow-colour;
+}

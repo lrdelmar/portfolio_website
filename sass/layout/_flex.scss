@@ -1,0 +1,11 @@
+@use '../utilities/variables' as *;
+@use '../utilities/functions' as *;
+
+.flex {
+  display: flex;
+  gap: $flex-gap;
+  padding: $padding-sm;
+
+  //   &__item {
+  //   }
+}

@@ -9,13 +9,14 @@ header {
   align-items: center;
   padding: 20px;
   background-color: $background-color;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px $shadow-colour;
 }
 
 .nav {
   display: flex;
   gap: 20px;
   list-style: none;
+  transform: none;
 
   &__links {
     display: flex;
@@ -72,16 +73,12 @@ header {
       cursor: pointer;
     }
 
-    .close-icon {
-      display: none;
-    }
-
-    @include breakpoint-down(medium) {
+    @include breakpoint-down(md) {
       display: block;
     }
   }
 
-  @include breakpoint-down(medium) {
+  @include breakpoint-down(md) {
     background-color: $background-color;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: absolute;
@@ -90,18 +87,30 @@ header {
     width: 100%;
     height: 30vh;
     justify-content: center;
-    transform: translateX(100%);
 
-    //Hide and deactivate mobile nav
+    //Mobile nav hidden by default
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
+
+    //Mobile nav animation
+    transition: transform 400ms ease, opacity 100ms ease-in-out;
 
     &.nav--open {
       opacity: 1;
       pointer-events: visible;
       visibility: visible;
       transform: translateX(0);
+
+      &__mobile {
+        .close-icon {
+          display: block;
+        }
+
+        .menu-icon {
+          display: none;
+        }
+      }
     }
 
     &__links {
@@ -123,5 +132,4 @@ header {
     }
   }
 }
-
 // resume Udemy Omnifood Section 8 - 134 timestamp 26mins38

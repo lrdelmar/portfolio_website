@@ -7,9 +7,10 @@
     <title>Portfolio</title>
   </head>
   <body>
-    <header>
-      <h1 class="logo">Lauren Delmar</h1>
-      <nav class="nav nav--open">
+    <header class="header" role="banner">
+      <h1 class="header__title" class="logo">Lauren Delmar</h1>
+      <!-- MAIN NAVIGATION -->
+      <nav class="nav">
         <ul class="nav__links">
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
@@ -17,6 +18,7 @@
           <li><a class="nav__cta" href="#contact">Hire Me</a></li>
         </ul>
       </nav>
+      <!-- MOBILE NAVIGATION -->
       <button class="nav__mobile">
         <svg
           class="size-6 menu-icon"
@@ -52,10 +54,113 @@
         </svg>
       </button>
     </header>
-    <main>
-      <section id="about">Content 1</section>
-      <section id="projects">Content 2</section>
-      <section id="contact">Content 3</section>
+    <main class="main-content" role="main">
+      <!-- ABOUT SECTION -->
+      <section id="about" class="flex" role="region">
+        <div class="flex__item flex__item--full flex__item--sm flex__item--md">
+          <h1>Lauren Delmar</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+            placeat laboriosam odit consectetur consequuntur autem porro
+            perferendis animi voluptatem possimus. Delectus praesentium in
+            adipisci eveniet maiores qui enim laborum ullam. Hic autem possimus
+            molestias itaque nam at, voluptatem asperiores officia accusantium
+            repellat enim mollitia sunt odio alias amet doloribus sed id
+            obcaecati suscipit modi minima harum, eveniet recusandae
+            voluptatibus? Unde?0
+          </p>
+        </div>
+      </section>
+      <!-- PROJECTS SECTION -->
+      <section
+        id="projects"
+        class="grid grid__responsive"
+        role="region"
+        aria-label="Project Content Block"
+      >
+        <h2
+          class="grid__heading"
+          role="heading"
+          aria-label="Project Content Header"
+        >
+          Projects
+        </h2>
+        <div
+          class="grid__item card"
+          role="article"
+          aria-label="Content Block 1"
+        >
+          <h3>Calculator</h3>
+          <p>HTML, SCSS, Javascript</p>
+          <figure>
+            <!-- Screenshots of calculator -->
+            <img src="" alt="" />
+            <figcaption>IMAGE & CAPTION</figcaption>
+          </figure>
+          <figure>
+            <!-- Screenshots of calculator -->
+            <img src="" alt="" />
+            <figcaption>IMAGE & CAPTION</figcaption>
+          </figure>
+          <button>
+            <a
+              href="https://lrdelmar.github.io/calculator-project/"
+              target="_blank"
+              >See Live Project</a
+            >
+          </button>
+        </div>
+        <div
+          class="grid__item card"
+          role="article"
+          aria-label="Content Block 2"
+        >
+          <h3>Project B</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+            placeat laboriosam odit consectetur consequuntur autem porro
+            perferendis animi voluptatem possimus. Delectus praesentium in
+            adipisci eveniet maiores qui enim laborum ullam. Hic autem possimus
+            molestias itaque nam at, voluptatem asperiores officia accusantium
+            repellat enim mollitia sunt odio alias amet doloribus sed id
+            obcaecati suscipit modi minima harum, eveniet recusandae
+            voluptatibus? Unde?0
+          </p>
+        </div>
+        <div
+          class="grid__item card"
+          role="article"
+          aria-label="Content Block 3"
+        >
+          <h3>Project C</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+            placeat laboriosam odit consectetur consequuntur autem porro
+            perferendis animi voluptatem possimus. Delectus praesentium in
+            adipisci eveniet maiores qui enim laborum ullam. Hic autem possimus
+            molestias itaque nam at, voluptatem asperiores officia accusantium
+            repellat enim mollitia sunt odio alias amet doloribus sed id
+            obcaecati suscipit modi minima harum, eveniet recusandae
+            voluptatibus? Unde?0
+          </p>
+        </div>
+      </section>
+      <!-- CONTACT SECTION -->
+      <section id="contact" class="flex" role="region">
+        <div class="flex__item flex__item--full flex__item--sm flex__item--md">
+          <h2>Contact</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+            placeat laboriosam odit consectetur consequuntur autem porro
+            perferendis animi voluptatem possimus. Delectus praesentium in
+            adipisci eveniet maiores qui enim laborum ullam. Hic autem possimus
+            molestias itaque nam at, voluptatem asperiores officia accusantium
+            repellat enim mollitia sunt odio alias amet doloribus sed id
+            obcaecati suscipit modi minima harum, eveniet recusandae
+            voluptatibus? Unde?0
+          </p>
+        </div>
+      </section>
     </main>
     <footer>
       <p>&copy; 2025 Lauren Delmar Jackson</p>
