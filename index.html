@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="./main.css" />
     <title>Portfolio</title>
   </head>
   <body>
@@ -60,14 +60,9 @@
         <div class="flex__item flex__item--full flex__item--sm flex__item--md">
           <h1>Lauren Delmar</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
-            placeat laboriosam odit consectetur consequuntur autem porro
-            perferendis animi voluptatem possimus. Delectus praesentium in
-            adipisci eveniet maiores qui enim laborum ullam. Hic autem possimus
-            molestias itaque nam at, voluptatem asperiores officia accusantium
-            repellat enim mollitia sunt odio alias amet doloribus sed id
-            obcaecati suscipit modi minima harum, eveniet recusandae
-            voluptatibus? Unde?0
+            Welcome, it's so great to see you. Feel free to have a look around
+            as this fully responsive website was my very first project! You can
+            also see my latest projects below.
           </p>
         </div>
       </section>
@@ -90,23 +85,31 @@
           role="article"
           aria-label="Content Block 1"
         >
-          <h3>Calculator</h3>
-          <p>HTML, SCSS, Javascript</p>
+          <h3 class="card__heading">Calculator</h3>
+          <p class="card__description">HTML, SCSS, Javascript</p>
           <figure>
             <!-- Screenshots of calculator -->
-            <img src="" alt="" />
-            <figcaption>IMAGE & CAPTION</figcaption>
+            <img
+              class="card__image"
+              src="./assets/images/calculator-project-300.webp"
+              alt="Calculator Project"
+            />
+            <figcaption class="card__image--caption">
+              Designed interface and built logic
+            </figcaption>
           </figure>
-          <figure>
-            <!-- Screenshots of calculator -->
-            <img src="" alt="" />
-            <figcaption>IMAGE & CAPTION</figcaption>
-          </figure>
-          <button>
+          <button class="button--link">
             <a
               href="https://lrdelmar.github.io/calculator-project/"
               target="_blank"
               >See Live Project</a
+            >
+          </button>
+          <button class="button--link">
+            <a
+              href="https://github.com/lrdelmar/calculator-project"
+              target="_blank"
+              >See GitHub Repo</a
             >
           </button>
         </div>
@@ -115,17 +118,9 @@
           role="article"
           aria-label="Content Block 2"
         >
-          <h3>Project B</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
-            placeat laboriosam odit consectetur consequuntur autem porro
-            perferendis animi voluptatem possimus. Delectus praesentium in
-            adipisci eveniet maiores qui enim laborum ullam. Hic autem possimus
-            molestias itaque nam at, voluptatem asperiores officia accusantium
-            repellat enim mollitia sunt odio alias amet doloribus sed id
-            obcaecati suscipit modi minima harum, eveniet recusandae
-            voluptatibus? Unde?0
-          </p>
+          <h3>Weather App</h3>
+          <p>HTML, Jinja, SCSS, Flask, Python</p>
+          <p>In Development</p>
         </div>
         <div
           class="grid__item card"
@@ -149,16 +144,11 @@
       <section id="contact" class="flex" role="region">
         <div class="flex__item flex__item--full flex__item--sm flex__item--md">
           <h2>Contact</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
-            placeat laboriosam odit consectetur consequuntur autem porro
-            perferendis animi voluptatem possimus. Delectus praesentium in
-            adipisci eveniet maiores qui enim laborum ullam. Hic autem possimus
-            molestias itaque nam at, voluptatem asperiores officia accusantium
-            repellat enim mollitia sunt odio alias amet doloribus sed id
-            obcaecati suscipit modi minima harum, eveniet recusandae
-            voluptatibus? Unde?0
-          </p>
+          <button class="button--link">
+            <a href="https://www.linkedin.com/in/laurenrdelmar/"
+              >Contact me on LinkedIn</a
+            >
+          </button>
         </div>
       </section>
     </main>

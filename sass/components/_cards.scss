@@ -2,6 +2,14 @@
 @use '../utilities/variables' as *;
 
 .card {
-  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: $radius-sm;
   box-shadow: 0 0 rem(10) $shadow-colour;
+  text-align: center;
+
+  &__image {
+    border-radius: $radius-sm;
+  }
 }

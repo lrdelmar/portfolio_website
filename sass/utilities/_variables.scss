@@ -19,6 +19,9 @@ $flex-gap: rem(16);
 $padding-sm: rem(16);
 $padding-md: rem(20);
 
+//Border radius defaults
+$radius-sm: rem(8);
+
 // Breakpoints
 
 // 320px, 768px, 1024px
@@ -29,7 +32,7 @@ $breakpoints-up: (
   // Tablets in portrait mode
   'lg': em(992),
   // Small desktops, tablets in landscape mode
-  'xl': em(1200) // Larger desktop monitors,,,,,,
+  'xl': em(1200) // Larger desktop monitors,,,,,,,,
 );
 
 // 319.98, 767.98px, 1023.98px
@@ -40,5 +43,5 @@ $breakpoints-down: (
   // Tablets in portrait mode
   'lg': em(991.99),
   // Small desktops, tablets in landscape mode
-  'xl': em(1199.99) // Larger desktop monitors,,,,,,
+  'xl': em(1199.99) // Larger desktop monitors,,,,,,,,
 );

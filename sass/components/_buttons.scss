@@ -1,0 +1,15 @@
+@use '../utilities/variables' as *;
+@use '../utilities/functions' as *;
+
+.button--link {
+  width: auto;
+  padding-inline: $padding-sm;
+  margin-top: $flex-gap;
+  border-radius: $radius-sm;
+  border: none;
+  transition: all 300ms;
+
+  &:hover {
+    font-weight: 900;
+  }
+}
